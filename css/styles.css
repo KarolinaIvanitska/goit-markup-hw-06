@@ -119,8 +119,6 @@ ol, ul{
     display: block;
 }
 
-
-
 .current {
     position: relative;
     color: #404bbf;
@@ -138,6 +136,7 @@ ol, ul{
     }
 
 
+    
 .address {
     font-style: normal;
     margin-left: auto;
