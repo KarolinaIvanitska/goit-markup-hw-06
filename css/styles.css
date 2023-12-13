@@ -255,12 +255,13 @@ ul {
     margin-right: auto;
     padding: 188px 0;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/peple-office-mobile.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 
 .main-text {
     color: #ffffff;
@@ -393,7 +394,7 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    
+    padding-bottom: 96px;
 }
 
 .section-four-li {
@@ -402,7 +403,6 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 32px;
-    margin-bottom: 96px;
 
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -498,7 +498,6 @@ ul {
 .list-customer-section-five {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: 72px 16px;
     padding: 0;
     margin: 0;
@@ -927,7 +926,7 @@ ul {
 
 /*====Tablet======*/
 
-@media screen and (min-width:767px) and (max-width:1157px){
+@media screen and (min-width:768px) and (max-width:1157px){
     .container {
     padding: 0 16px;
     max-width: 768px;
@@ -1058,12 +1057,13 @@ ul {
     margin-right: auto;
     padding: 188px 0;
 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 
 .main-text {
     color: #ffffff;
@@ -1110,7 +1110,6 @@ ul {
 .section-two-main-page {
     display: flex;
     width: 100%;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     padding-top: 96px;
@@ -1120,18 +1119,18 @@ ul {
 .header-three {
     color: var(--text-color);
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
+    text-transform: capitalize;
 }
 
 .section-two {
     max-width: 100%;
     height: 248px;
-    flex-direction: column;
     align-items: center;
     gap: 72px 24px;
     display: flex;
@@ -1153,7 +1152,7 @@ ul {
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-bottom: 8px;
@@ -1184,18 +1183,20 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 72px;
     padding-top: 96px;
+    margin-bottom: 72px;
 }
 
 .list-section-four {
-    width: 100%;
-    height: 1224px;
-    flex-direction: column;
+    width: 552px;
     align-items: center;
     gap: 64px 24px;
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 96px;
 }
 
 .section-four-li {
@@ -1255,6 +1256,8 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    margin-top: 32px;
+
 }
 
 .paragraph-our-team {
@@ -1303,7 +1306,6 @@ ul {
 .list-customer-section-five {
     max-width: 100%;
     height: 248px;
-    flex-direction: column;
     align-items: center;
     gap: 72px 24px;
     display: flex;
@@ -2687,3 +2689,46 @@ ul {
     }
     /*+footer*/
 }
+
+ @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+ screen and (min-device-pixel-ratio:2),
+ screen and (min-resolution: 2ddpx) {
+     .section-one {
+         background-color: #2e2f42;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 188px 0;
+
+         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-mobile@2x.jpg);
+         width: 100%;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+ }
+
+ @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+ screen and (min-device-pixel-ratio:2),
+ screen and (min-resolution: 2ddpx) {
+     .section-one {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet@2x.jpg);
+         width: 100%;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+ }
+
+
+ @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+ screen and (min-device-pixel-ratio:2),
+ screen and (min-resolution: 2ddpx) {
+     .section-one {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office@2x.jpg);
+         width: 100%;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
+     }
+ }
+
