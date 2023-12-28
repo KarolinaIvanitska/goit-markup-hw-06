@@ -139,14 +139,15 @@ ul {
 
     .mobile-menu-container {
         position: fixed;
+        width: 100%;
+        height: 796px;
+        padding: 72px 24px 24px 16px;
         top: 0;
         right: 0;
         background: var(--WHITE, #FFF);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
         z-index: 99999999;
-        width: 100%;
-        height: 100%;
-        transform: translateX(100%);
+        transform: translateX(0%);
         transition: transform 250ms linear;
     }
 
@@ -161,9 +162,11 @@ ul {
         line-height: 0;
         padding: 0;
         stroke: #2E2F42;
-        padding-top: 32px;
-        padding-right: 32px;
-        margin-left: auto;
+        position: absolute;
+        right: 24px;
+        top: 24px;
+        width: 24px;
+        height: 24px;
     }
 
     .mobile-menu-link{
@@ -182,8 +185,7 @@ ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
-        margin-left: 40px;
-        margin-bottom: 168px;
+        margin-bottom: 84px;
     }
 
    
@@ -197,8 +199,7 @@ ul {
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
-        width: 353px;
-        margin-left: 40px;
+        margin-bottom: 48px;
     }
 
     .social-list-link-phone {
@@ -310,6 +311,8 @@ ul {
 /*=====SECTION-2=====*/
 .section-two-main-page  {
         width: 100%;
+        padding-top: 96px;
+        padding-bottom: 96px;
     }
 
     .header-three {
@@ -329,8 +332,6 @@ ul {
         display: flex;
         flex-direction: column;
         gap: 72px;
-        margin-top: 96px;
-        padding: 0 15px;
         }
     
 
@@ -339,7 +340,7 @@ ul {
     }
 
     .list-section-two {
-        width: 396px;
+        width: 100%;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
@@ -353,7 +354,6 @@ ul {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.32px;
-        margin-bottom: 8px;
     }
 
     /*=====END-SECTION-2=====*/
@@ -372,7 +372,8 @@ ul {
 .section-four {
     width: 100%;
     background-color: #F4F4FD;
-    margin-top: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px; 
 }
 
 .text-our-team {
@@ -385,8 +386,6 @@ ul {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
-    padding-top: 96px;
-
 }
 
 .list-section-four {
@@ -394,7 +393,6 @@ ul {
     flex-direction: column;
     align-items: center;
     gap: 72px;
-    padding-bottom: 96px;
 }
 
 .section-four-li {
@@ -480,19 +478,20 @@ ul {
 .section-five {
     color:var(--a-color);
     width: 100%;
+    padding-top: 96px; 
+    padding-bottom: 96px;
 }
 
 .customers {
     font-size: 36px;
     line-height: 1.2;
-    margin-bottom: 72px;
     color: var(--text-color);
     text-align: center;
     font-family: Roboto;
     font-weight: 700;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-top: 96px;
+    margin-bottom: 72px;
 }
 
 .list-customer-section-five {
@@ -762,13 +761,12 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1.17;
-    /* display: inline-block; */
-    margin-bottom: 17px;
-    text-align: center;
 
-    display: inline-flex;
+    display: flex;
     height: 24px;
-    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .logo-part-two-footer {
@@ -785,11 +783,7 @@ ul {
 
 .container-footer {
     width: 264px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 96px;
     padding-top: 96px;
-    text-align: center;
 }
 
 .paragraph-footer-socialmedia {
@@ -798,7 +792,6 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 72px;
     text-align: center;
 }
 
@@ -811,7 +804,9 @@ ul {
 
 .container-footer-sm {
     width: 208px; 
-    margin: auto; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 72px;
 }
 
 .item-footer-socialmedia {
@@ -865,8 +860,6 @@ ul {
     margin-bottom: 16px;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 16px;
-    margin-top: 72px;
     text-align: center;
 }
 
@@ -876,8 +869,10 @@ ul {
 
 .container-info {
     background-color: var(--backgroud-color);
-    margin: auto;
-    width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px; 
+    margin-bottom: 96px;
 }
 
 .form-container {
@@ -947,7 +942,6 @@ ul {
         align-items: center;
         flex-direction: row;
         display: flex;
-        padding: 16px;
     }
     
     .menu {
@@ -1016,15 +1010,14 @@ ul {
     .list-nav-portfolio {
         display: flex;
         flex-direction: column;
+        margin-bottom: 16px;
+        margin-top: 16px;
     }
 
-    .contact-li {
+    /* .contact-li {
         display: flex;
-        margin-bottom: 12px;
-        margin-left: 122px;
-        width: 119px;
-        height: 14px;
-    }
+        margin-bottom: 12px;   
+    } */
     
     .contact {
         color: #434455;
@@ -1055,7 +1048,7 @@ ul {
     background-color: #2e2f42;
     margin-left: auto;
     margin-right: auto;
-    padding: 188px 0;
+    padding: 112px 0;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office-tablet.jpg);
     width: 100%;
@@ -1108,8 +1101,6 @@ ul {
 /*=====END-SECTION-1=====*/
 /*=====SECTION-2=====*/
 .section-two-main-page {
-    display: flex;
-    width: 100%;
     justify-content: flex-end;
     align-items: center;
     padding-top: 96px;
@@ -1129,8 +1120,6 @@ ul {
 }
 
 .section-two {
-    max-width: 100%;
-    height: 248px;
     align-items: center;
     gap: 72px 24px;
     display: flex;
@@ -1155,7 +1144,6 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    margin-bottom: 8px;
 }
 
 /*=====END-SECTION-2=====*/
@@ -1172,6 +1160,8 @@ ul {
 .section-four {
     background-color: #F4F4FD;
     width: 100%; 
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .text-our-team {
@@ -1183,7 +1173,6 @@ ul {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-top: 96px;
     margin-bottom: 72px;
 }
 
@@ -1196,12 +1185,11 @@ ul {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 96px;
 }
 
 .section-four-li {
     width: calc((100%-24)/2);
-    height: 428px;
+    height: 428px; 
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -1276,18 +1264,12 @@ ul {
 
 /*=====SECTION-FIVE=====*/
 .section-five {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container-customers{
-    width: 552px;
-    height: 360px;
-    margin-bottom: 96px;
+    width: 586px;
 }
 
 .customers {
@@ -1298,7 +1280,6 @@ ul {
     line-height: 1. 11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    margin-top: 96px;
     margin-bottom: 72px;
     text-align: center;
 }
@@ -1345,12 +1326,12 @@ ul {
 .footer {
     background-color: var(--backgroud-color);
     width: 100%;
-    height: 456px;
-    margin-top: 96px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container-all-footer {
-    max-width: 584px;
+    max-width: 586px;
     display: flex;
     gap: 72px 24px;
     flex-wrap: wrap;
@@ -1384,7 +1365,6 @@ ul {
 
 .container-footer {
     width: 264px;
-    margin-top: 96px;
     padding: 0;
     text-align: left;
     margin-right: 0;
@@ -1408,7 +1388,6 @@ ul {
 
 .container-footer-sm {
     width: 208px;
-    margin-top: 96px;
 }
 
 .item-footer-socialmedia {
@@ -1509,7 +1488,7 @@ ul {
 
 .svg-subscribe {
     fill: var(--svg-color);
-    margin-left: 16px;
+     margin-left: 16px;
 }
 
 .label-email {
@@ -1743,7 +1722,7 @@ ul {
 
     .container{
         max-width: 1158px;
-        padding: 16px;
+        padding: 0 15px;
     }
 
     .mobile-menu-container{
@@ -1757,7 +1736,6 @@ ul {
     
     .navigation {
         width: 100%;
-        height: 72px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1961,7 +1939,6 @@ ul {
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.32px;
-        margin-bottom: 8px;
     }
 
     /*=====END-SECTION-2=====*/
