@@ -151,7 +151,7 @@ ul {
         transition: transform 250ms linear;
     }
     
-    .mobile-menu-container .is-open {
+    .mobile-menu-container.is-open {
         transform: translateX(0%);
     }
 
